@@ -56,7 +56,8 @@ std::string int_TOroman(std::map<int, char> mp, int number)
 					i--;
 				}
 				result = result + it->second;
-				it++;it++;
+				if(!sequence){ it++; }
+				it++;
 				result = result + it->second;
 
 			}
